@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load staticfiles  %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{%static 'css/teststyle.css' %}">
+    </head>
+    <body>
+        <div class="heading"><h1>online test</h1></div>
+     
+        <div class="questionblock">
+            <div class="que"> <h3>{{que}}</h3></div>
+           <div class="option"> <input type="radio" name='answer'>{{a}}</div>
+           <div class="option"> <input type="radio" name='answer'>{{b}}</div>
+           <div class="option"> <input type="radio" name='answer'>{{c}}</div>
+           <div class="option"> <input type="radio" name='answer'>{{d}}</div>
+
+    </div>
+    <div class="submit"><input type='submit'></div>
+    
+    </body>
+</html>
